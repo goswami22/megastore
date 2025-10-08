@@ -1,0 +1,350 @@
+<!-- https://themes.shopify.com/themes/megastore/presets/megastore -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <style>
+        * {
+            font-family:  "Roboto", sans-serif;;
+        }
+.best-selling-slider {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.single-product .image-area {
+  position: relative;
+}
+
+.single-product .image-area a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.single-product .image-area a img.product-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s all linear;
+}
+.single-product .image-area span.bedge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--orange);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5rem;
+    color: var(--white);
+}
+.single-product:hover .image-area a img.product-hover {
+  opacity: 1;
+}
+.single-product .image-area .product-content {
+    padding-block-start: 1rem;
+}
+.single-product .image-area .product-content .price span {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-block-end: 0.6rem;
+    display: inline-block;
+}
+.single-product .image-area .product-content .price span.current-price {
+    color: var(--orange);
+    margin-inline-end: 0.6rem;
+}
+.single-product .image-area .product-content .price span.old-price {
+    color: var(--darkgray);
+}
+.single-product .image-area .product-content .category {
+    font-size: 1.2rem;
+    color: var(--darkgray);
+    text-transform: capitalize;
+}
+.single-product .image-area .product-content .product-title {
+    position: relative;
+}
+.single-product .image-area .product-content .product-title > a:first-child  {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--black);
+}
+.single-product .image-area .product-content .product-title > a.quick-view-btn {
+    font-size: 1.4rem;
+    color: var(--orange);
+    font-weight: 400;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: var(--white);
+}
+.single-product:hover .image-area .product-content .product-title > a:first-child {
+    opacity: 0;
+}
+.single-product .image-area .product-content .product-title > a.underline-effect::before {
+    background-color: var(--orange);
+}
+.single-product:hover .image-area .product-content .product-title a.quick-view-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.single-product .image-area .product-content a.product-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Best seller -->
+    <section class="best-seller section-space">
+        <div class="ms-container">
+            <div class="section-header">
+                <h2 class="title">best seller</h2>
+                <a href="#" title=""><span class="underline-effect">shop all</span>
+                    <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.6333 12.5L8 6.86673L8.86673 6L15.3667 12.5L8.86673 19L8 18.1333L13.6333 12.5Z"
+                            fill="currentColor" stroke="currentColor" stroke-width="0.3"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="best-selling-slider js-product-slider owl-carousel owl-theme">
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="single-product">
+                        <div class="image-area">
+                            <span class="bedge">-17%</span>
+                            <a href="#" title="product image">
+                                <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                    height="958" class="img-fluid">
+                                <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                    height="958" class="product-hover img-fluid">
+                            </a>
+                            <div class="product-content">
+                                <a href="#" class="product-link"></a>
+                                <div class="price">
+                                    <span class="current-price">$24.00</span>
+                                    <span class="old-price"><s>$30.00</s></span>
+                                </div>
+                                <span class="category">aenean</span>
+                                <h3 class="product-title">
+                                    <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                    <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                </h3>
+                                <p class="total-item">
+                                    <span>5</span>last items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            let owlInitialized = false;
+
+            function initOrDestroyOwl() {
+                const $slider = $('.best-selling-slider');
+                const windowWidth = $(window).width();
+
+                // ✅ Initialize for mobile/tablet only
+                if (windowWidth < 992 && !owlInitialized) {
+                    $slider.addClass('owl-carousel owl-theme').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        dots: false,
+                        nav: false,
+                        responsive: {
+                            0: { items: 2 },
+                            600: { items: 3 },
+                        }
+                    });
+                    owlInitialized = true;
+                }
+
+                // 🚫 Destroy for desktop
+                else if (windowWidth >= 992 && owlInitialized) {
+                    $slider.trigger('destroy.owl.carousel');
+                    $slider.removeClass('owl-carousel owl-theme owl-loaded');
+                    $slider.find('.owl-stage-outer').children().unwrap();
+                    owlInitialized = false;
+                }
+            }
+
+            initOrDestroyOwl(); // Run once on load
+
+            // 🔁 Handle resize with debounce (prevents flicker)
+            let resizeTimer;
+            $(window).on('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(initOrDestroyOwl, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>

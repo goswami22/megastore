@@ -1,0 +1,555 @@
+<!-- https://themes.shopify.com/themes/megastore/presets/megastore -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/fevi-icon.png" type="image/png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Flickity Css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <!-- custome css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Ecommerce store - Megastore</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="top-header">
+            <div class="ms-container">
+                <div class="top-header-wrapper">
+                    <ul>
+                        <li><a href="about.html" class="underline-effect" title="About">about</a></li>
+                        <li><a href="journal.html" class="underline-effect" title="journal">journal</a></li>
+                        <li><a href="#" class="underline-effect" title="Help center">help center</a></li>
+                    </ul>
+                    <div class="contact">
+                        <span>need help ? call us:</span>
+                        <a href="tel:+84 2500 888 33" class="underline-effect" title="+84 2500 888 33">+84 2500 888
+                            33</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-header">
+            <div class="ms-container">
+                <div class="middle-header-wrapper">
+                    <div class="mobile-toggle-icon">
+                        <svg class="icon icon-burger" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3462 13.6H6V12H17.3462H26.6924V13.6H17.3462H15.3462Z" fill="#ffffff"></path>
+                            <path d="M12.3234 19.6H6V18H13.6766H20V19.6H13.6766H12.3234Z" fill="#ffffff"></path>
+                        </svg>
+                    </div>
+                    <div class="logo">
+                        <a href="#" title="logo">
+                            <img src="/assets/images/logo-.svg" alt="lgo" width="164" height="35" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="search-area">
+                        <button class="primary-button">
+                            <svg class="icon icon-burger" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3462 13.6H6V12H17.3462H26.6924V13.6H17.3462H15.3462Z" fill="#ffffff">
+                                </path>
+                                <path d="M12.3234 19.6H6V18H13.6766H20V19.6H13.6766H12.3234Z" fill="#ffffff"></path>
+                            </svg>
+                            <span>shop all</span>
+                        </button>
+
+                        <div class="input-area">
+                            <button>
+                                <svg class="icon icon-search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <input type="search" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-rigion">
+                            <div class="region">
+                                <svg class="icon icon-region" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C10.6112 22 9.30842 21.7375 8.09175 21.2125C6.87508 20.6875 5.81533 19.9736 4.9125 19.0708C4.00967 18.1681 3.29858 17.1056 2.77925 15.8832C2.25975 14.6611 2 13.3556 2 11.9668C2 10.5723 2.25975 9.27083 2.77925 8.0625C3.29858 6.85417 4.00967 5.79858 4.9125 4.89575C5.81533 3.99308 6.87508 3.28475 8.09175 2.77075C9.30842 2.25692 10.6112 2 12 2C13.3945 2 14.6987 2.25692 15.9125 2.77075C17.1263 3.28475 18.1847 3.99308 19.0875 4.89575C19.9903 5.79858 20.7014 6.85417 21.2208 8.0625C21.7403 9.27083 22 10.5723 22 11.9668C22 13.3556 21.7403 14.6611 21.2208 15.8832C20.7014 17.1056 19.9903 18.1681 19.0875 19.0708C18.1847 19.9736 17.1263 20.6875 15.9125 21.2125C14.6987 21.7375 13.3945 22 12 22ZM12 20.35C12.5333 19.75 12.9833 19.0833 13.35 18.35C13.7167 17.6167 14.0167 16.7723 14.25 15.8168H9.76675C9.98892 16.7278 10.2833 17.5583 10.65 18.3083C11.0167 19.0583 11.4667 19.7388 12 20.35ZM9.71675 20.0168C9.33892 19.4111 9.0125 18.7652 8.7375 18.0793C8.4625 17.3931 8.23333 16.6389 8.05 15.8168H4.56675C5.15008 16.8834 5.84033 17.7445 6.6375 18.4C7.43467 19.0555 8.46108 19.5944 9.71675 20.0168ZM14.3 20C15.4112 19.6445 16.407 19.1084 17.2875 18.3918C18.168 17.6751 18.8833 16.8168 19.4333 15.8168H15.9668C15.7723 16.6278 15.5403 17.3763 15.2708 18.0625C15.0014 18.7487 14.6778 19.3945 14.3 20ZM3.95 14.15H7.73325C7.68325 13.7388 7.65133 13.3597 7.6375 13.0125C7.62367 12.6653 7.61675 12.3168 7.61675 11.9668C7.61675 11.5723 7.62642 11.2125 7.64575 10.8875C7.66525 10.5625 7.7 10.2111 7.75 9.83325H3.95C3.8445 10.2111 3.77092 10.5597 3.72925 10.8792C3.68758 11.1986 3.66675 11.5611 3.66675 11.9668C3.66675 12.3723 3.68758 12.7431 3.72925 13.0793C3.77092 13.4153 3.8445 13.7722 3.95 14.15ZM9.43325 14.15H14.5833C14.6444 13.6945 14.6847 13.3043 14.7042 12.9793C14.7236 12.6543 14.7333 12.3168 14.7333 11.9668C14.7333 11.6278 14.7236 11.3013 14.7042 10.9875C14.6847 10.6737 14.6444 10.2889 14.5833 9.83325H9.43325C9.37225 10.2889 9.332 10.6737 9.3125 10.9875C9.293 11.3013 9.28325 11.6278 9.28325 11.9668C9.28325 12.3168 9.293 12.6543 9.3125 12.9793C9.332 13.3043 9.37225 13.6945 9.43325 14.15ZM16.25 14.15H20.05C20.1555 13.7722 20.2291 13.4153 20.2708 13.0793C20.3124 12.7431 20.3333 12.3723 20.3333 11.9668C20.3333 11.5611 20.3124 11.1986 20.2708 10.8792C20.2291 10.5597 20.1555 10.2111 20.05 9.83325H16.2667C16.3167 10.3333 16.3514 10.7402 16.3708 11.0542C16.3903 11.3681 16.4 11.6723 16.4 11.9668C16.4 12.3278 16.3875 12.6707 16.3625 12.9957C16.3375 13.3208 16.3 13.7055 16.25 14.15ZM15.95 8.16675H19.4333C18.9056 7.12225 18.2014 6.24167 17.3208 5.525C16.4403 4.80833 15.4278 4.29442 14.2833 3.98325C14.6611 4.57775 14.9847 5.2125 15.2542 5.8875C15.5236 6.5625 15.7555 7.32225 15.95 8.16675ZM9.76675 8.16675H14.2667C14.0778 7.33342 13.7861 6.53342 13.3917 5.76675C12.9972 5.00008 12.5333 4.30558 12 3.68325C11.5 4.18325 11.075 4.78608 10.725 5.49175C10.375 6.19725 10.0556 7.08892 9.76675 8.16675ZM4.56675 8.16675H8.06675C8.23892 7.35558 8.45692 6.61525 8.72075 5.94575C8.98475 5.27642 9.31117 4.62783 9.7 4C8.5555 4.31117 7.55133 4.8195 6.6875 5.525C5.82367 6.2305 5.11675 7.11108 4.56675 8.16675Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                                <details>
+                                    <summary class="underline-effect">region</summary>
+                                    <div class="region-wrapper popup-box">
+                                        <ul>
+                                            <li><a href="#" aria-label="labngauge">labngauge</a></li>
+                                            <li><a href="#" aria-label="region">region</a></li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="mode">
+                                <a href="#" class="underline-effect" aria-label="Dark mode">dark mode</a>
+                            </div>
+                        </div>
+                        <div class="header-cart">
+                            <div class="user">
+                                <details>
+                                    <summary class="underline-effect">sign in</summary>
+                                    <div class="user-login popup-box">
+                                        <a href="#" aria-label="Login">login</a>
+                                        <a href="#" aria-label="create account">create account</a>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="header-cart-area">
+                                <a href="" class="underline-effect">cart <span class="badge">0</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header menubar">
+            <div class="ms-container">
+                <nav>
+                    <ul>
+                        <li class="megamenu">
+                            <a href="">featured</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="">women</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="">men</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="">accessories</a>
+                        </li>
+                        <li class="simplemenu">
+                            <a href="">
+                                <svg class="icon icon-menu-sale" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="20" height="20" rx="10" fill="#D00000"></rect>
+                                    <path
+                                        d="M7.10767 9.71516C6.52559 9.71516 6.02879 9.50941 5.61728 9.09789C5.20576 8.68648 5 8.18969 5 7.6075C5 7.02542 5.20576 6.52863 5.61728 6.11711C6.02879 5.7057 6.52559 5.5 7.10767 5.5C7.68974 5.5 8.18654 5.7057 8.59805 6.11711C9.00957 6.52863 9.21533 7.02542 9.21533 7.6075C9.21533 8.18969 9.00957 8.68648 8.59805 9.09789C8.18654 9.50941 7.68974 9.71516 7.10767 9.71516ZM7.10733 8.7158C7.41503 8.7158 7.67669 8.60809 7.89233 8.39267C8.10809 8.17725 8.21596 7.91569 8.21596 7.608C8.21596 7.30019 8.10825 7.03847 7.89283 6.82283C7.67742 6.60719 7.4158 6.49937 7.108 6.49937C6.8003 6.49937 6.53858 6.60708 6.32283 6.8225C6.10719 7.03792 5.99937 7.29947 5.99937 7.60717C5.99937 7.91497 6.10708 8.17669 6.3225 8.39234C6.53791 8.60798 6.79953 8.7158 7.10733 8.7158ZM12.8925 15.5C12.3103 15.5 11.8135 15.2942 11.4021 14.8827C10.9906 14.4712 10.7848 13.9744 10.7848 13.3923C10.7848 12.8103 10.9906 12.3135 11.4021 11.9019C11.8135 11.4904 12.3103 11.2847 12.8925 11.2847C13.4746 11.2847 13.9714 11.4904 14.3829 11.9019C14.7943 12.3135 15 12.8103 15 13.3923C15 13.9744 14.7943 14.4712 14.3829 14.8827C13.9714 15.2942 13.4746 15.5 12.8925 15.5ZM12.892 14.5006C13.1998 14.5006 13.4615 14.3929 13.6772 14.1775C13.8928 13.9621 14.0006 13.7005 14.0006 13.3927C14.0006 13.085 13.8929 12.8233 13.6775 12.6077C13.4621 12.3919 13.2005 12.284 12.8928 12.284C12.585 12.284 12.3233 12.3917 12.1077 12.6072C11.892 12.8226 11.7842 13.0842 11.7842 13.392C11.7842 13.6997 11.8919 13.9614 12.1073 14.1772C12.3228 14.3928 12.5843 14.5006 12.892 14.5006ZM5.75985 15.4359L5.06413 14.7401L14.2403 5.56396L14.936 6.25969L5.75985 15.4359Z"
+                                        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5"></path>
+                                </svg>
+                                sale</a>
+                        </li>
+                        <li class="simplemenu">
+                            <a href="">best seller</a>
+                        </li>
+                        <li class="simplemenu">
+                            <a href="">new in</a>
+                        </li>
+                        <li class="simplemenu">
+                            <a href="">premium collection</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- slider -->
+
+        <!-- Hero banner -->
+        <section class="hero-banner section-space">
+            <div class="ms-container">
+                <div class="hero-banner-wrapper">
+                    <div class="hero-banner-block">
+                        <div class="single-block">
+                       
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/assets/images/banner-XL_1.jpg">
+                                </source>
+                                <img src="/assets/images/hero-xl.jpg" alt="hero banner" width="1600" height="838"
+                                    class="img-fluid">
+                            </picture>
+                            <div class="content">
+                                <div class="top-content">
+                                    <span class="bagde">sale</span>
+                                    <h2><a href="#" aria-label="Dressed to Impress – Now at Half the Price">Dressed to
+                                            Impress – Now at Half the Price</a></h2>
+                                    <p>Change your style, make a statement, and save big.</p>
+                                </div>
+                                <div class="bottom-content">
+                                    <p><b>Get an extra 10% off your first order with code MEGA50</b></p>
+                                    <form action="" aria-label="">
+                                        <div class="field">
+                                            <input type="text" name="" id="offer-btn" value="MEGA50" readonly>
+                                            <button class="offer-btn primary-button">
+                                                <svg class="icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.5 18.6667C8.05 18.6667 7.65975 18.5014 7.32925 18.1708C6.99858 17.8403 6.83325 17.45 6.83325 17V3.66675C6.83325 3.21675 6.99858 2.82642 7.32925 2.49575C7.65975 2.16525 8.05 2 8.5 2H18.8333C19.2833 2 19.6736 2.16525 20.0042 2.49575C20.3347 2.82642 20.5 3.21675 20.5 3.66675V17C20.5 17.45 20.3347 17.8403 20.0042 18.1708C19.6736 18.5014 19.2833 18.6667 18.8333 18.6667H8.5ZM8.5 17H18.8333V3.66675H8.5V17ZM5.16675 22C4.71675 22 4.32642 21.8347 3.99575 21.5042C3.66525 21.1736 3.5 20.7833 3.5 20.3333V5.33325H5.16675V20.3333H17.1667V22H5.16675Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                <span>copy code</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <a href="#" class="primary-button"><span>shop now</span></a>
+                                </div>
+                            </div>
+                            <a href="#" class="product-link" aria-label="product-link"></a>
+                        </div>
+                    </div>
+                    <div class="hero-banner-block">
+                        <div class="hero-banner-block-wrapper">
+                            <div class="single-block">
+                                
+                                <img src="/assets/images/hero-m-1.jpg" alt="banner image" width="535" height="566"
+                                    class="img-fluid">
+                                <div class="content">
+                                    <div class="top-content">
+                                        <span class="bagde">new drop</span>
+                                        <h2><a href="#" aria-label="Dressed to Impress – Now at Half the Price">Dressed
+                                                to Impress – Now at Half the Price</a></h2>
+                                        <a href="#" class="primary-button"><span>shop now</span></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-link" aria-label="product-link"></a>
+                            </div>
+                            <div class="single-block">
+                                <img src="/assets/images/hero-m-2.jpg" alt="banner image" width="535" height="566"
+                                    class="img-fluid">
+                                <div class="content">
+                                    <div class="top-content">
+                                        <span class="bagde">men exclusive</span>
+                                        <h2><a href="#" aria-label="Dressed to Impress – Now at Half the Price">Dressed
+                                                to Impress – Now at Half the Price</a></h2>
+                                        <a href="#" class="primary-button"><span>shop now</span></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-link" aria-label="product-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best seller -->
+        <section class="best-seller section-space">
+            <div class="ms-container">
+                <div class="section-header">
+                    <h2 class="title">best seller</h2>
+                    <a href="#" title=""><span class="underline-effect">shop all</span>
+                        <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6333 12.5L8 6.86673L8.86673 6L15.3667 12.5L8.86673 19L8 18.1333L13.6333 12.5Z"
+                                fill="currentColor" stroke="currentColor" stroke-width="0.3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="best-selling-slider owl-carousel owl-theme">
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="single-product">
+                            <div class="image-area">
+                                <span class="bedge">-17%</span>
+                                <a href="#" title="product image">
+                                    <img src="../assets/images/product1.jpg" alt="product image" width="720"
+                                        height="958" class="img-fluid">
+                                    <img src="../assets/images/product1.1.jpg" alt="product image" width="720"
+                                        height="958" class="product-hover img-fluid">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="product-link"></a>
+                                    <div class="price">
+                                        <span class="current-price">$24.00</span>
+                                        <span class="old-price"><s>$30.00</s></span>
+                                    </div>
+                                    <span class="category">aenean</span>
+                                    <h3 class="product-title">
+                                        <a href="#" title="product title">Sleeveless Round Neck Top</a>
+                                        <a href="#" class="quick-view-btn underline-effect">quick view</a>
+                                    </h3>
+                                    <p class="total-item">
+                                        <span>5</span>last items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- Our offer -->
+        <section class="our-offer">
+            <div class="ms-container">
+                <div class="section-header">
+                    <h2 class="title">top offers</h2>
+                </div>
+                <div class="offer-wrapper offer-slider owl-carousel owl-theme">
+                    <div class="offer-block">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/offer-sm.jpg">
+                            <img src="../assets/images/offer-xl.jpg" alt="offer image" width="475" height="265" class="img-fluid">
+                        </picture>
+                        <div class="content">
+                            <div class="left-content">
+                                <span class="badge">women</span>
+                                <h3 class="title">
+                                    <a href="#" aria-label="stay warm in style">stay warm in<br>style</a>
+                                </h3>
+                                <p>Soft. Bold. Unmissable. Find your new favorite in our latest drop.</p>
+                                <a href="#" class="primary-button" aria-label="shop now"><span>shop now</span></a>
+                            </div>
+                            <div class="right-content">
+                                <div class="discont">
+                                    <span>form</span>
+                                    <h3><sup>$</sup>5</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-block">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/offer2-sm.jpg">
+                            <img src="../assets/images/offer2-xl.jpg" alt="offer image" width="475" height="265" class="img-fluid">
+                        </picture>
+                        <div class="content">
+                            <div class="left-content">
+                                <span class="badge">women</span>
+                                <h3 class="title">
+                                      <a href="#" aria-label="stay warm in style">Step Into Everyday<br>style</a>
+                                </h3>
+                                <p>Soft. Bold. Unmissable. Find your new favorite in our latest drop.</p>
+                                <a href="#" class="primary-button" aria-label="shop now"><span>shop now</span></a>
+                            </div>
+                            <div class="right-content">
+                                <div class="discont">
+                                    <span>upto</span>
+                                    <h3>-30<sup>%</sup></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-block">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/offer3-sm.jpg">
+                            <img src="../assets/images/offer3-xl.jpg" alt="offer image" width="475" height="265" class="img-fluid">
+                        </picture>
+                        <div class="content">
+                            <div class="left-content">
+                                <span class="badge">women</span>
+                                <h3 class="title">
+                                    <a href="#" aria-label="stay warm in style">Your New Favorite<br>Jumper</a>
+                                </h3>
+                                <p>Soft. Bold. Unmissable. Find your new favorite in our latest drop.</p>
+                                <a href="#" class="primary-button" aria-label="shop now"><span>shop now</span></a>
+                            </div>
+                            <div class="right-content">
+                                <div class="discont">
+                                    <span>summer</span>
+                                    <h3>sale</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- treding now -->
+         <section class="treding-now">
+            <div class="ms-container">
+                <div class="section-header">
+                    <h2 class="title">top offers</h2>
+                </div>
+                <div class="treding-now-wrapper">
+                    <div class="treding-product">
+                        <div class="image-area">
+                            <img src="" alt="">
+                            <a href="" class="product-popup-point"></a>
+                        </div>
+                        <div class="content">
+                            <div class="treding-product-content-wrapper">
+                                <div class="left-content">
+                                    <span class="category">Kevlar</span>
+                                    <h3><a href="#" aria-label="">Kevlar</a></h3>
+                                    <p class="price">$24.99</p>
+                                </div>
+                                <div class="right-content">
+                                    <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6333 12.5L8 6.86673L8.86673 6L15.3667 12.5L8.86673 19L8 18.1333L13.6333 12.5Z" fill="currentColor" stroke="currentColor" stroke-width="0.3"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
