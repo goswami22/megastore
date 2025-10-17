@@ -461,7 +461,11 @@ a.product-link {
     z-index: 3;
 }
 /* best seller slider */
-.best-selling-slider {
+.best-selling-slider,
+.new-in-all,
+.new-in-top,
+.new-in-buttoms,
+.new-in-accessories {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
@@ -472,6 +476,147 @@ a.product-link {
   border-radius: 10px;
   display: block;
 }
+
+.treding-now .treding-now-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+}
+.treding-now .treding-now-wrapper .treding-product .image-area img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 0 -30px;
+}
+.treding-product {
+    position: relative;
+}
+
+.treding-product .popup-box {
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    transform: translate(7rem, 0);
+}
+.treding-product .popup-box a.product-popup-point{
+    width: 3rem;
+    height: 3rem;
+    background: var(--white);
+    border-radius: 5rem;
+    border: 0.1rem solid var(--white);
+    position: relative;
+    z-index: 2;
+}
+.product-popup-point::after  {
+    content: '';
+    position: absolute;
+    background-color: var(--white);
+    inset: 50%;
+    width: 4rem;  
+    height: 4rem;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+    z-index: -1;
+    opacity: 0.5;
+    animation: pulse 1.25s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+
+/* Heartbeat animation with opacity and scaling */
+@keyframes pulse {
+0% {
+    transform: translate(-50%, -50%) scale(.5);
+    opacity: .9;
+}
+50% {
+    opacity: .6;
+}
+
+100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+}
+.treding-product .popup-box a.product-popup-point::before {
+    content: '';
+    position: absolute;
+    background-color: var(--black);
+    inset: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+}
+.treding-product .popup-box .content {
+    background: var(--white);
+    padding: 2rem 2rem;
+    /* transform: translate(-5rem, 1rem); */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s all linear;
+}
+.treding-product .popup-box .content .treding-product-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    justify-content: space-between;
+}
+.treding-product .popup-box a.product-popup-point + .content.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.tabs {
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+}
+
+.tab-link {
+	border: 0.1rem solid #888;
+    padding: 0.1rem 1.4rem;
+    margin-inline-end: 0.6rem;
+    min-height: 3.4rem;
+    line-height: 3.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--primary-fonts);
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    transition: 0.2s all linear;
+}
+.tab-link:last-child {
+    margin-right: 0;
+}   
+.tab-link:hover {
+	border-color:var(--black);
+}
+
+.tab-link.active {
+	color: var(--orange);
+	border-color: var(--orange);
+}
+
+.content-wrapper {
+	padding: 2rem 0;
+}
+
+.tab-content {
+	display: none;
+	animation: fadeIn 0.5s ease 1 forwards;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
 
 /* Mobile view: remove grid look */
 @media (max-width: 767px) {
